@@ -3,5 +3,5 @@
 ---
 
 @import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+  "hippyod-labs-theme/skins/{{ site.hippyod-labs-theme.skin | default: 'classic' }}",
+  "hippyod-labs-theme/initialize";

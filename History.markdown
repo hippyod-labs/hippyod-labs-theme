@@ -32,7 +32,7 @@
   * Remove RSS icon from the social media list (#470)
   * Improve the readablility of blockquotes (#481)
   * Extract more color rules into skins (#452)
-  * Introduce &#34;Dark Minima&#34; skin (#335)
+  * Introduce &#34;Dark hippyod-labs-theme&#34; skin (#335)
   * Reduce spacing in the three largest headers (#538)
   * Add `auto` skin which honors the `prefers-color-scheme` media query (#634)
   * Add google scholar. (#673)
@@ -42,7 +42,7 @@
 
   * Allow skins to be defined and customized easily (#336)
   * Drop support for scalar &#39;author&#39; configuration (#384)
-  * Place skins in `minima/skins` to clarify purpose (#479)
+  * Place skins in `hippyod-labs-theme/skins` to clarify purpose (#479)
   * Add adaptive skin: `solarized` (#594)
   * Generate social iconsheet during build (#686)
   * Rename `default` layout to `base` (#690)
@@ -177,7 +177,7 @@
 ### Development Fixes
 
   * Remove duplicate .sass-cache  (#71)
-  * Demo minima on GitHub Pages (#76)
+  * Demo hippyod-labs-theme on GitHub Pages (#76)
   * Remove the Rakefile (#118)
 
 ### Documentation
@@ -203,7 +203,7 @@
 
   * priority to site.url when site.github.url is available (#46)
   * Move contents of the index.html page to the 'home' layout (#48)
-  * Use  new `absolute_url` and `relative_url` filters in minima (#57)
+  * Use  new `absolute_url` and `relative_url` filters in hippyod-labs-theme (#57)
 
 ### Development Fixes
 

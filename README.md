@@ -1,11 +1,11 @@
 <div align="center">
   <p><em><strong>Disclaimer:</strong> The information here may vary depending on the version you're using.<br/>
   Please refer to the <code>README.md</code> bundled within the theme-gem for information specific to your version or by pointing
-  your browser to the Git tag corresponding to your version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.md.<br/>
-  Running <code>bundle show minima</code> will provide you with the local path to your current theme version.</em></p>
+  your browser to the Git tag corresponding to your version. e.g. https://github.com/jekyll/hippyod-labs-theme/blob/v2.5.0/README.md.<br/>
+  Running <code>bundle show hippyod-labs-theme</code> will provide you with the local path to your current theme version.</em></p>
   <img src="/readme_banner.svg"/>
   <p>It's Jekyll's default (and first) theme. It's what you get when you run <code>jekyll new</code>.</p>
-  <p><a href="https://jekyll.github.io/minima/">Theme preview</a></p>
+  <p><a href="https://jekyll.github.io/hippyod-labs-theme/">Theme preview</a></p>
   <p><img src="/screenshot.png"/></p>
 </div>
 
@@ -14,7 +14,7 @@
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "minima"
+gem "hippyod-labs-theme"
 ```
 
 And then execute:
@@ -24,7 +24,7 @@ And then execute:
 
 ## Contents At-A-Glance
 
-Minima has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
+hippyod-labs-theme has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
 
 ### Layouts
 
@@ -39,7 +39,7 @@ Refers to files within the `_layouts` directory, that define the markup for your
 
 #### Base Layout
 
-From Minima v3 onwards, the base layout is named **`base.html`** instead of `default.html` to avoid confusing new users into
+From hippyod-labs-theme v3 onwards, the base layout is named **`base.html`** instead of `default.html` to avoid confusing new users into
 assuming that name holds special status.
 
 Users migrating from older versions with customized `_layouts/default.html` are advised to rename their copy to
@@ -64,13 +64,13 @@ layout: base
 
 ##### *Main Heading and Content-injection*
 
-From Minima v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
+From hippyod-labs-theme v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
 
 Usually the `site.title` itself would suffice as the implicit 'main-title' for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a `title` variable in the document's front matter and it will be rendered with an `<h1>` tag.
 
 ##### *Post Listing*
 
-This section is optional from Minima v2.2 onwards.<br/>
+This section is optional from hippyod-labs-theme v2.2 onwards.<br/>
 It will be automatically included only when your site contains one or more valid posts or drafts (if the site is configured to `show_drafts`).
 
 The title for this section is `Posts` by default and rendered with an `<h2>` tag. You can customize this heading by defining a `list_title` variable in the document's front matter.
@@ -86,7 +86,7 @@ Refers to snippets of code within the `_includes` directory that can be inserted
   - `head.html` &mdash; Code-block that defines the `<head></head>` in *default* layout.
   - `custom-head.html` &mdash; Placeholder to allow users to add more metadata to `<head />`.
   - `header.html` &mdash; Defines the site's main header section. By default, pages with a defined `title` attribute will have links displayed here.
-  - `social.html` &mdash; Renders social-media icons based on the `minima:social_links` data in the config file.
+  - `social.html` &mdash; Renders social-media icons based on the `hippyod-labs-theme:social_links` data in the config file.
   - `social-item.html` &mdash; Template to render individual list-item containing graphic link to configured social-profile.
   - `social-links/*.svg` &mdash; SVG markup components of supported social-icons.
 
@@ -95,13 +95,13 @@ Refers to snippets of code within the `_includes` directory that can be inserted
 
 Refers to `.scss` files within the `_sass` directory that define the theme's styles.
 
-  - `minima/skins/classic.scss` &mdash; The "classic" skin of the theme. *Used by default.*
-  - `minima/initialize.scss` &mdash; A component that defines the theme's *skin-agnostic* variable defaults and sass partials.
+  - `hippyod-labs-theme/skins/classic.scss` &mdash; The "classic" skin of the theme. *Used by default.*
+  - `hippyod-labs-theme/initialize.scss` &mdash; A component that defines the theme's *skin-agnostic* variable defaults and sass partials.
     It imports the following components (in the following order):
-    - `minima/custom-variables.scss` &mdash; A hook that allows overriding variable defaults and mixins. (*Note: Cannot override styles*)
-    - `minima/_base.scss` &mdash; Sass partial for resets and defines base styles for various HTML elements.
-    - `minima/_layout.scss` &mdash; Sass partial that defines the visual style for various layouts.
-    - `minima/custom-styles.scss` &mdash; A hook that allows overriding styles defined above. (*Note: Cannot override variables*)
+    - `hippyod-labs-theme/custom-variables.scss` &mdash; A hook that allows overriding variable defaults and mixins. (*Note: Cannot override styles*)
+    - `hippyod-labs-theme/_base.scss` &mdash; Sass partial for resets and defines base styles for various HTML elements.
+    - `hippyod-labs-theme/_layout.scss` &mdash; Sass partial that defines the visual style for various layouts.
+    - `hippyod-labs-theme/custom-styles.scss` &mdash; A hook that allows overriding styles defined above. (*Note: Cannot override variables*)
 
 Refer the [skins](#skins) section for more details.
 
@@ -112,13 +112,13 @@ Refers to various asset files within the `assets` directory.
 
   - `assets/css/style.scss` &mdash; Imports sass files from within the `_sass` directory and gets processed into the theme's
     stylesheet: `assets/css/styles.css`.
-  - `assets/minima-social-icons.html` &mdash; Imports enabled social-media icon graphic and gets processed into a composite SVG file.
+  - `assets/hippyod-labs-theme-social-icons.html` &mdash; Imports enabled social-media icon graphic and gets processed into a composite SVG file.
     Refer [section on social networks](#social-networks) for its usage.
 
 
 ### Plugins
 
-Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
+hippyod-labs-theme comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
 
 
 ## Usage
@@ -126,21 +126,21 @@ Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) p
 Have the following line in your config file:
 
 ```yaml
-theme: minima
+theme: hippyod-labs-theme
 ```
 
 
 ### Customizing templates
 
-To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
+To override the default structure and style of hippyod-labs-theme, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
+e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from hippyod-labs-theme gem folder to `<yoursite>/_includes` and start editing that file.
 
 The site's default CSS has now moved to a new place within the gem itself, [`assets/css/style.scss`](assets/css/style.scss).
 
-In Minima 3.0, if you only need to customize the colors of the theme, refer to the subsequent section on skins. To have your
+In hippyod-labs-theme 3.0, if you only need to customize the colors of the theme, refer to the subsequent section on skins. To have your
 *CSS overrides* in sync with upstream changes released in future versions, you can collect all your overrides for the Sass
-variables and mixins inside a sass file placed at `_sass/minima/custom-variables.scss` and all other overrides inside a sass file
-placed at path `_sass/minima/custom-styles.scss`.
+variables and mixins inside a sass file placed at `_sass/hippyod-labs-theme/custom-variables.scss` and all other overrides inside a sass file
+placed at path `_sass/hippyod-labs-theme/custom-styles.scss`.
 
 You need not maintain entire partial(s) at the site's source just to override a few styles. However, your stylesheet's primary
 source (`assets/css/style.scss`) should contain the following:
@@ -156,39 +156,39 @@ Therefore, your `assets/css/style.scss` should contain the following at minimum:
 ---
 
 @import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+  "hippyod-labs-theme/skins/{{ site.hippyod-labs-theme.skin | default: 'classic' }}",
+  "hippyod-labs-theme/initialize";
 ```
 
 #### Skins
 
-Minima 3.0 supports defining and switching between multiple color-palettes (or *skins*).
+hippyod-labs-theme 3.0 supports defining and switching between multiple color-palettes (or *skins*).
 
 ```
 .
-├── minima.scss
-└── minima
+├── hippyod-labs-theme.scss
+└── hippyod-labs-theme
     └── _syntax-highlighting.scss
 ```
 
 
-A skin is a Sass file placed in the directory `_sass/minima/skins` and it defines the variable defaults related to the "color"
+A skin is a Sass file placed in the directory `_sass/hippyod-labs-theme/skins` and it defines the variable defaults related to the "color"
 aspect of the theme. It also embeds the Sass rules related to syntax-highlighting since that is primarily related to color and
 has to be adjusted in harmony with the current skin.
 
-The default color palette for Minima is defined within `_sass/minima/skins/classic.scss`. To switch to another available skin,
-simply declare it in the site's config file. For example, to activate `_sass/minima/skins/dark.scss` as the skin, the setting
+The default color palette for hippyod-labs-theme is defined within `_sass/hippyod-labs-theme/skins/classic.scss`. To switch to another available skin,
+simply declare it in the site's config file. For example, to activate `_sass/hippyod-labs-theme/skins/dark.scss` as the skin, the setting
 would be:
 
 ```yaml
-minima:
+hippyod-labs-theme:
   skin: dark
 ```
 
 As part of the migration to support skins, some existing Sass variables have been retired and some **have been redefined** as
 summarized in the following table:
 
-Minima 2.0      | Minima 3.0
+hippyod-labs-theme 2.0      | hippyod-labs-theme 3.0
 --------------- | ----------
 `$brand-color`  | `$link-base-color`
 `$grey-*`       | `$brand-*`
@@ -223,13 +223,13 @@ header_pages:
 
 ### Change default date format
 
-You can change the default date format by specifying `site.minima.date_format`
+You can change the default date format by specifying `site.hippyod-labs-theme.date_format`
 in `_config.yml`.
 
 ```
-# Minima date format
+# hippyod-labs-theme date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
+hippyod-labs-theme:
   date_format: "%b %-d, %Y"
 ```
 
@@ -263,7 +263,7 @@ If you don't want to display comments for a particular post you can disable them
 
 ### Author Metadata
 
-From `Minima-3.0` onwards, `site.author` is expected to be a mapping of attributes instead of a simple scalar value:
+From `hippyod-labs-theme-3.0` onwards, `site.author` is expected to be a mapping of attributes instead of a simple scalar value:
 
 ```yaml
 author:
@@ -273,7 +273,7 @@ author:
 
 To migrate existing metadata, update your config file and any reference to the object in your layouts and includes as summarized below:
 
-Minima 2.x    | Minima 3.0
+hippyod-labs-theme 2.x    | hippyod-labs-theme 3.0
 ------------- | -------------------
 `site.author` | `site.author.name`
 `site.email`  | `site.author.email`
@@ -282,18 +282,18 @@ Minima 2.x    | Minima 3.0
 ### Social networks
 
 You can add links to the accounts you have on other sites, with respective icon as an SVG graphic, via the config file.
-From `Minima-3.0` onwards, the social media data is sourced from config key `minima.social_links`. It is a list of key-value pairs, each entry
+From `hippyod-labs-theme-3.0` onwards, the social media data is sourced from config key `hippyod-labs-theme.social_links`. It is a list of key-value pairs, each entry
 corresponding to a link rendered in the footer. For example, to render links to Jekyll GitHub repository and twitter account, one should have:
 
 ```yaml
-minima:
+hippyod-labs-theme:
   social_links:
     - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
     - { platform: twitter, user_url: "https://twitter.com/jekyllrb" }
 ```
 
 Apart from the necessary keys illustrated above, `title` may also be defined to render a custom link-title. By default, the title is the same
-as `platform`. The `platform` key corresponds to the SVG id of the sprite in the composite file at URL `/assets/minima-social-icons.svg`.
+as `platform`. The `platform` key corresponds to the SVG id of the sprite in the composite file at URL `/assets/hippyod-labs-theme-social-icons.svg`.
 
 The theme ships with an icon for `rss` and icons of select social-media platforms:
 
@@ -315,7 +315,7 @@ The theme ships with an icon for `rss` and icons of select social-media platform
 
 To render a link to a platform not listed above, one should first create a file at path `_includes/social-icons/<PLATFORM>.svg` comprised of
 graphic markup **without the top-level `<svg></svg>`**. The icon is expected to be centered within a viewbox of `"0 0 16 16"`. Then, make an
-entry under key `minima.social_links`.
+entry under key `hippyod-labs-theme.social_links`.
 
 For example, to render a link to an account of user `john.doe` at platform `deviantart.com`, the steps to follow would be:
   - Get DeviantArt logo in SVG format.
@@ -327,7 +327,7 @@ For example, to render a link to an account of user `john.doe` at platform `devi
     project at path `_includes/social-icons/deviantart.svg`.
   - Finally, edit the Jekyll config file to enable loading of new icon graphic with:
     ```yaml
-    minima:
+    hippyod-labs-theme:
       social_links:
         - platform: deviantart  # same as SVG filename.
           user_url: "https://www.deviantart.com/john.doe"  # URL of profile page.
@@ -361,7 +361,7 @@ show_excerpts: true
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/hippyod-labs-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 

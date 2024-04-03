@@ -240,86 +240,86 @@ $table-border-color: $lm-table-border-color;
   // Auto mode
 
   :root {
-    --minima-brand-color: #{$lm-brand-color};
-    --minima-brand-color-light: #{$lm-brand-color-light};
-    --minima-brand-color-dark: #{$lm-brand-color-dark};
+    --hippyod-labs-theme-brand-color: #{$lm-brand-color};
+    --hippyod-labs-theme-brand-color-light: #{$lm-brand-color-light};
+    --hippyod-labs-theme-brand-color-dark: #{$lm-brand-color-dark};
 
-    --minima-site-title-color: #{$lm-site-title-color};
+    --hippyod-labs-theme-site-title-color: #{$lm-site-title-color};
 
-    --minima-text-color: #{$lm-text-color};
-    --minima-background-color: #{$lm-background-color};
-    --minima-code-background-color: #{$lm-code-background-color};
+    --hippyod-labs-theme-text-color: #{$lm-text-color};
+    --hippyod-labs-theme-background-color: #{$lm-background-color};
+    --hippyod-labs-theme-code-background-color: #{$lm-code-background-color};
 
-    --minima-link-base-color: #{$lm-link-base-color};
-    --minima-link-visited-color: #{$lm-link-visited-color};
-    --minima-link-hover-color: #{$lm-link-hover-color};
+    --hippyod-labs-theme-link-base-color: #{$lm-link-base-color};
+    --hippyod-labs-theme-link-visited-color: #{$lm-link-visited-color};
+    --hippyod-labs-theme-link-hover-color: #{$lm-link-hover-color};
 
-    --minima-border-color-01: #{$lm-border-color-01};
-    --minima-border-color-02: #{$lm-border-color-02};
-    --minima-border-color-03: #{$lm-border-color-03};
+    --hippyod-labs-theme-border-color-01: #{$lm-border-color-01};
+    --hippyod-labs-theme-border-color-02: #{$lm-border-color-02};
+    --hippyod-labs-theme-border-color-03: #{$lm-border-color-03};
 
-    --minima-table-text-color: #{$lm-table-text-color};
-    --minima-table-zebra-color: #{$lm-table-zebra-color};
-    --minima-table-header-bg-color: #{$lm-table-header-bg-color};
-    --minima-table-header-border: #{$lm-table-header-border};
-    --minima-table-border-color: #{$lm-table-border-color};
+    --hippyod-labs-theme-table-text-color: #{$lm-table-text-color};
+    --hippyod-labs-theme-table-zebra-color: #{$lm-table-zebra-color};
+    --hippyod-labs-theme-table-header-bg-color: #{$lm-table-header-bg-color};
+    --hippyod-labs-theme-table-header-border: #{$lm-table-header-border};
+    --hippyod-labs-theme-table-border-color: #{$lm-table-border-color};
   }
 
   @include lm-highlight;
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --minima-brand-color: #{$dm-brand-color};
-      --minima-brand-color-light: #{$dm-brand-color-light};
-      --minima-brand-color-dark: #{$dm-brand-color-dark};
+      --hippyod-labs-theme-brand-color: #{$dm-brand-color};
+      --hippyod-labs-theme-brand-color-light: #{$dm-brand-color-light};
+      --hippyod-labs-theme-brand-color-dark: #{$dm-brand-color-dark};
 
-      --minima-site-title-color: #{$dm-site-title-color};
+      --hippyod-labs-theme-site-title-color: #{$dm-site-title-color};
 
-      --minima-text-color: #{$dm-text-color};
-      --minima-background-color: #{$dm-background-color};
-      --minima-code-background-color: #{$dm-code-background-color};
+      --hippyod-labs-theme-text-color: #{$dm-text-color};
+      --hippyod-labs-theme-background-color: #{$dm-background-color};
+      --hippyod-labs-theme-code-background-color: #{$dm-code-background-color};
 
-      --minima-link-base-color: #{$dm-link-base-color};
-      --minima-link-visited-color: #{$dm-link-visited-color};
-      --minima-link-hover-color: #{$dm-link-hover-color};
+      --hippyod-labs-theme-link-base-color: #{$dm-link-base-color};
+      --hippyod-labs-theme-link-visited-color: #{$dm-link-visited-color};
+      --hippyod-labs-theme-link-hover-color: #{$dm-link-hover-color};
 
-      --minima-border-color-01: #{$dm-border-color-01};
-      --minima-border-color-02: #{$dm-border-color-02};
-      --minima-border-color-03: #{$dm-border-color-03};
+      --hippyod-labs-theme-border-color-01: #{$dm-border-color-01};
+      --hippyod-labs-theme-border-color-02: #{$dm-border-color-02};
+      --hippyod-labs-theme-border-color-03: #{$dm-border-color-03};
 
-      --minima-table-text-color: #{$dm-table-text-color};
-      --minima-table-zebra-color: #{$dm-table-zebra-color};
-      --minima-table-header-bg-color: #{$dm-table-header-bg-color};
-      --minima-table-header-border: #{$dm-table-header-border};
-      --minima-table-border-color: #{$dm-table-border-color};
+      --hippyod-labs-theme-table-text-color: #{$dm-table-text-color};
+      --hippyod-labs-theme-table-zebra-color: #{$dm-table-zebra-color};
+      --hippyod-labs-theme-table-header-bg-color: #{$dm-table-header-bg-color};
+      --hippyod-labs-theme-table-header-border: #{$dm-table-header-border};
+      --hippyod-labs-theme-table-border-color: #{$dm-table-border-color};
     }
 
     @include dm-highlight;
   }
 
-  $brand-color: var(--minima-brand-color);
-  $brand-color-light: var(--minima-brand-color-light);
-  $brand-color-dark: var(--minima-brand-color-dark);
+  $brand-color: var(--hippyod-labs-theme-brand-color);
+  $brand-color-light: var(--hippyod-labs-theme-brand-color-light);
+  $brand-color-dark: var(--hippyod-labs-theme-brand-color-dark);
 
-  $site-title-color: var(--minima-site-title-color);
+  $site-title-color: var(--hippyod-labs-theme-site-title-color);
 
-  $text-color: var(--minima-text-color);
-  $background-color: var(--minima-background-color);
-  $code-background-color: var(--minima-code-background-color);
+  $text-color: var(--hippyod-labs-theme-text-color);
+  $background-color: var(--hippyod-labs-theme-background-color);
+  $code-background-color: var(--hippyod-labs-theme-code-background-color);
 
-  $link-base-color: var(--minima-link-base-color);
-  $link-visited-color: var(--minima-link-visited-color);
-  $link-hover-color: var(--minima-link-hover-color);
+  $link-base-color: var(--hippyod-labs-theme-link-base-color);
+  $link-visited-color: var(--hippyod-labs-theme-link-visited-color);
+  $link-hover-color: var(--hippyod-labs-theme-link-hover-color);
 
-  $border-color-01: var(--minima-border-color-01);
-  $border-color-02: var(--minima-border-color-02);
-  $border-color-03: var(--minima-border-color-03);
+  $border-color-01: var(--hippyod-labs-theme-border-color-01);
+  $border-color-02: var(--hippyod-labs-theme-border-color-02);
+  $border-color-03: var(--hippyod-labs-theme-border-color-03);
 
-  $table-text-color: var(--minima-table-text-color);
-  $table-zebra-color: var(--minima-table-zebra-color);
-  $table-header-bg-color: var(--minima-table-header-bg-color);
-  $table-header-border: var(--minima-table-header-border);
-  $table-border-color: var(--minima-table-border-color);
+  $table-text-color: var(--hippyod-labs-theme-table-text-color);
+  $table-zebra-color: var(--hippyod-labs-theme-table-zebra-color);
+  $table-header-bg-color: var(--hippyod-labs-theme-table-header-bg-color);
+  $table-header-border: var(--hippyod-labs-theme-table-header-border);
+  $table-border-color: var(--hippyod-labs-theme-table-border-color);
 
 
 } @else if $color-scheme-dark {
