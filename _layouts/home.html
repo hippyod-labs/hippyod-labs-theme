@@ -30,8 +30,8 @@ layout: base
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-          {%- if post.summary -%}
-            <div>{{ post.summary | escape }}</div>
+          {%- if post.description -%}
+            <div class="post-description">{{ post.description | escape }}</div>
           {%- endif -%}
         </h3>
         {%- if site.show_excerpts -%}
