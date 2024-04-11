@@ -4,12 +4,14 @@
 html {
   scroll-padding-top: 100px;
   scrollbar-width: thin;
+  align-items: center;
 }
  
 .site-header, .site-footer, .page-content {
   width: 100%;
   left: 0;
   right: 0;
+  padding: 2px 0px;
 }
 
 
@@ -18,7 +20,6 @@ html {
  */
 .site-header {
   position: sticky;
-  padding: 3px 0px;
   height: 85px;
   width: 100%;
   top: 0;
@@ -107,7 +108,7 @@ html {
     color: $text-color;
     line-height: $base-line-height;
     display: block;
-    padding: 5px 10px;
+    padding: 3px 10px;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -152,7 +153,6 @@ html {
 .site-footer {
   position: sticky;
   border-top: 1px solid $border-color-01;
-  padding: 5px 0px;
   
   bottom: 0;
   height: 90px;
@@ -235,6 +235,16 @@ html {
 .page-content {
   text-align: justify;
   flex: 1 0 auto;
+  padding-top: 10px;
+  
+  max-width: 900px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-color: $brand-color;
+  border-style: solid;
+  margin: 0px auto;  
 }
 
 .page-heading {

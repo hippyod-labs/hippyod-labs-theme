@@ -1,5 +1,12 @@
 <ul class="social-media-list">
-{%- for entry in site.hippyod-labs-theme.social_links -%}
-  {%- include social-item.html item = entry -%}
-{%- endfor -%}
+  {%- for entry in site.hippyod-labs-theme.social_links -%}
+    {%- include social-item.html item = entry -%}
+  {%- endfor -%}
+  <li>
+    <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
+      <svg class="svg-icon orange">
+        <use xlink:href="{{ 'assets/hippyod-labs-theme-social-icons.svg#rss' | relative_url }}"></use>
+      </svg>
+    </a>
+  <li>
 </ul>
