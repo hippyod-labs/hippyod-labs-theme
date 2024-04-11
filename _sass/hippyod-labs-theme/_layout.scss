@@ -152,7 +152,7 @@ html {
  */
 .site-footer {
   position: sticky;
-  border-top: 1px solid $border-color-01;
+  padding-top: 4px;
   
   bottom: 0;
   height: 90px;
@@ -245,6 +245,10 @@ html {
   border-color: $brand-color;
   border-style: solid;
   margin: 0px auto;  
+}
+
+pre, code {
+  border-color: $brand-color;
 }
 
 .page-heading {
