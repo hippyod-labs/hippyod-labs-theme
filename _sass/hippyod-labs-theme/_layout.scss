@@ -4,11 +4,16 @@
 html {
   scroll-padding-top: 100px;
   scrollbar-width: thin;
+  overflow-x: hidden;
   align-items: center;
+}
+
+body {
+  width: 100vw;;
 }
  
 .site-header, .site-footer, .page-content {
-  width: 100%;
+  width: 100vw;
   left: 0;
   right: 0;
   padding: 2px 0px;
@@ -21,7 +26,7 @@ html {
 .site-header {
   position: sticky;
   height: 85px;
-  width: 100%;
+  width: 100vw;
   top: 0;
   z-index: 999;
   
@@ -156,7 +161,7 @@ html {
   
   bottom: 0;
   height: 90px;
-  width: 100%;
+  width: 100vw;
   left: 0px;
 }
 
@@ -179,6 +184,10 @@ html {
 .social-links {
   @include relative-font-size(0.9375);
   color: $brand-color;
+}
+
+.footer-col-wrapper {
+  height: 100%;
 }
 
 .footer-col {
