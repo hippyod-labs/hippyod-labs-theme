@@ -11,14 +11,13 @@ html {
 body {
   width: 100vw;;
 }
- 
+
 .site-header, .site-footer, .page-content {
   width: 100vw;
   left: 0;
   right: 0;
   padding: 2px 0px;
 }
-
 
 /**
  * Site header
@@ -29,7 +28,7 @@ body {
   width: 100vw;
   top: 0;
   z-index: 999;
-  
+
   border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 1.25;
@@ -158,7 +157,7 @@ body {
 .site-footer {
   position: sticky;
   padding-top: 4px;
-  
+
   bottom: 0;
   height: 90px;
   width: 100vw;
@@ -245,14 +244,14 @@ body {
   text-align: justify;
   flex: 1 0 auto;
   padding-top: 10px;
-  
-  max-width: 900px;
+
+  max-width: 1100px;
   border-top-width: 0px;
   border-bottom-width: 0px;
   border-left-width: 1px;
   border-right-width: 1px;
   border-style: solid;
-  margin: 0px auto;  
+  margin: 0px auto;
 }
 
 .page-heading {
