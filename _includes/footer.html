@@ -7,16 +7,18 @@
       <div class="footer-col">
             {%- if site.author %}
         <ul class="contact-list">
+          {% if site.description -%}
+            <li>{{ site.description | escape }}</li>
+          {%- endif %}
           {% if site.author.email -%}
             <li>Contact: <a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
           {%- endif %}
+          <li>Copyright © {{ site.time | date: '%Y' }} {{ site.author.name }}.  All rights reserved.</li>
         </ul>
-        <p>{{ site.copyright-notice | escape }}</p>
       {%- endif %}
       </div>
       <div class="footer-col">
         <ul class="contact-list">
-          <li class="p-name">{{ site.description | escape }}</li>
           <li class="p-name">
             {%- include social.html -%}
           </li>

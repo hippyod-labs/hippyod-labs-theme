@@ -156,10 +156,11 @@ body {
  */
 .site-footer {
   position: sticky;
-  padding-top: 4px;
+  padding-top: 10px;
+  padding-bottom: 25px;
 
   bottom: 0;
-  height: 90px;
+  height: 50px;
   width: 100vw;
   left: 0px;
 }
@@ -177,6 +178,12 @@ body {
 .social-media-list {
   list-style: none;
   margin-left: 0;
+}
+
+.contact-list .p-name {
+  display: flex; 
+  justify-content: end;
+  padding: 0;
 }
 
 .footer-col-wrapper,
@@ -346,7 +353,7 @@ body {
 
 .social-media-list {
   display: table;
-  margin: 0 auto;
+  margin: auto 0;
   li {
     float: left;
     margin: 5px 10px 5px 0;
