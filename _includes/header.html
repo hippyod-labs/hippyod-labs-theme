@@ -4,7 +4,7 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     
-    {% assign site_icon_path = "/siteicon.png" %}
+    {% assign site_icon_path = "/_includes/images/siteicon.png" %}
     {% assign site_icon_file = site.static_files | where: "path", site_icon_path | first %}
     {% if site_icon_file %}
     <div class="site-icon">
