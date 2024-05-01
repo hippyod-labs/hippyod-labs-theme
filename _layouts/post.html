@@ -20,34 +20,39 @@ layout: base
       {%- endif -%}
       {%- if page.author -%}
         • {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">{{ author }}</span>
+            </span>
             {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-      {%- endif -%}</p>
+          {% endfor %}
+      {%- endif -%}
+    </p>
+    <span class="h-card">
+      <a class="link" href="#comments">Comment</a>
+    </span>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
-  </div>
-
-  {% if page.github_comments_issueid and site.github_comments_repository %}
-    <div id="gh-comments">
-        <br/><br/>
-        <h6>COMMENTS</h6>
-        <div id="gh-comments-list"></div>
-    </div>
-    
-    <script src="{{ site.baseurl }}/script/github-comments.js"> </script>
-    
-    <script type="text/javascript"> 
-        DoGithubComments ( 
-            "{{ site.github_comments_repository }}" , 
-            "{{ page.github_comments_issueid }}" 
-        ); 
-    </script>
-    <noscript>Please enable JavaScript to view comments.</noscript>
-  {% endif %}
-
+    <h2>
+      Comments
+      <script src="https://utteranc.es/client.js"
+        repo="hippyod-labs/.github"
+        issue-term="title"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+      </script>
+        
+      <noscript>Please enable JavaScript to view comments.</noscript>
+    </h2>
+  </div>  
+  
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  
+  <div class="sect1">
+    <h2>
+      <a id="comments" class="link" href="#comments"></a>
+    </h2>
+  </div>
 </article>
