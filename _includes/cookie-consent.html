@@ -35,7 +35,7 @@
   <span>We DO NOT advertise and DO NOT sell any data ourselves, but we do use Google Analytics for basic visitor stats.</span>
   <a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
   <a id="cookie-notice-decline" class="btn btn-primary btn-sm">Decline</a>
-  [<a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google Privacy Info</a>]
+  <a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google Privacy Info</a>
 </div>
 
 <script type="module">
@@ -71,8 +71,10 @@
       el.addEventListener('error', reject);
       document.body.append(el);
   });
-
-  if(readCookie('cookie-notice-dismissed')=='true') {
+  
+  if (readCookie('cookie-notice-declined')=='true') {
+      document.getElementById('cookie-notice').style.display = 'none';
+  } else if(readCookie('cookie-notice-accepted')=='true') {
     try {
         await addScript('https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}');
         // do something after it was loaded
@@ -90,13 +92,13 @@
   }
 
   document.getElementById('cookie-notice-accept').addEventListener("click",function() {
-      createCookie('cookie-notice-dismissed','true',31);
+      createCookie('cookie-notice-accepted','true',31);
       document.getElementById('cookie-notice').style.display = 'none';
       location.reload();
   });
 
   document.getElementById('cookie-notice-decline').addEventListener("click",function() {
-      document.getElementById('cookie-notice').style.display = 'none';
+      createCookie('cookie-notice-declined','true',31);
       location.reload();
   });
 
