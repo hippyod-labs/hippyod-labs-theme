@@ -11,13 +11,13 @@
     background: #222;
     color: rgba(255,255,255,0.8);
   }
-  
+
   #cookie-notice a {
-    display: inline-block; 
+    display: inline-block;
     cursor: pointer;
     margin-left: 0.5rem;
   }
-  
+
   @media (max-width: 767px) {
       #cookie-notice span {
         display: block;
@@ -35,7 +35,7 @@
   <span>We DO NOT advertise and DO NOT sell any data ourselves, but we do use Google Analytics for basic visitor stats.</span>
   <a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
   <a id="cookie-notice-decline" class="btn btn-primary btn-sm">Decline</a>
-  [<a href="https://policies.google.com/technologies/partner-sites">Google Privacy Info</a>]
+  [<a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google Privacy Info</a>]
 </div>
 
 <script type="module">
@@ -48,7 +48,7 @@
       }
       document.cookie = name + "=" + value + expires + "; path=/";
   }
-  
+
   function readCookie(name) {
       var nameEQ = name + "=";
       var ca = document.cookie.split(';');
@@ -59,11 +59,11 @@
       }
       return null;
   }
-  
+
   function eraseCookie(name) {
       createCookie(name,"",-1);
   }
-  
+
   const addScript = async src => new Promise((resolve, reject) => {
       const el = document.createElement('script');
       el.src = src;
@@ -88,13 +88,13 @@
   } else {
       document.getElementById('cookie-notice').style.display = 'block';
   }
-  
+
   document.getElementById('cookie-notice-accept').addEventListener("click",function() {
       createCookie('cookie-notice-dismissed','true',31);
       document.getElementById('cookie-notice').style.display = 'none';
       location.reload();
   });
-  
+
   document.getElementById('cookie-notice-decline').addEventListener("click",function() {
       document.getElementById('cookie-notice').style.display = 'none';
       location.reload();
