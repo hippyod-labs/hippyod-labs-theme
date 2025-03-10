@@ -7,8 +7,8 @@
       <div class="footer-col">
             {%- if site.author %}
         <ul class="contact-list">
-          {% if site.tagline -%}
-            <li>{{ site.tagline | escape }}</li>
+          {% if site.description -%}
+            <li>{{ site.description | escape }}</li>
           {%- endif %}
           {% if site.author.email -%}
             <li>Contact: <a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
