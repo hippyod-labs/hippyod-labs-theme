@@ -14,15 +14,15 @@
     <div>
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
         {{ site.title | escape }}
-        {% if site.subtitle %}
-        <div class="site-subtitle">
-          {{ site.subtitle }}
-        </div>
-        {%- endif -%}
         {% if page.title %}
           <div class="site-subtitle">
             Currently reading: {{ page.title }}
           </div>
+        {%- endif -%}
+        {% else if site.subtitle %}
+        <div class="site-subtitle">
+          {{ site.subtitle }}
+        </div>
         {%- endif -%}
       </a>
     </div>
