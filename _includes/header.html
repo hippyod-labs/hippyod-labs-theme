@@ -15,13 +15,20 @@
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
         {{ site.title | escape }}
         {% if page.title %}
+          <h2 style="visibility: hidden;">{{ page.title }}</h2>
           <div class="site-subtitle">
             Currently reading: {{ page.title }}
           </div>
         {% elsif site.tagline %}
-        <div class="site-subtitle">
-          {{ site.tagline }}
-        </div>
+          <h1 style="visibility: hidden;">{{ site.title }}</h1>
+          <div class="site-subtitle">
+            {{ site.tagline }}
+          </div>
+        {%- endif -%}
+        {% if page.excerpt %}
+          <h2 style="visibility: hidden;">{{ page.excerpt }}</h2>
+        {% elsif page.description %}
+          <h2 style="visibility: hidden;">{{ page.description }}</h2>
         {%- endif -%}
       </a>
     </div>
